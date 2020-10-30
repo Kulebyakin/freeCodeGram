@@ -20,19 +20,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c48b056-d1bb-4f43-9dfe-139620affab3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Policies/ProfilePolicy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/posts/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/profiles/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FollowsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Providers/TelescopeServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/telescope.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_044208_creates_profile_user_pivot_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/app-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/FreeCodeGram.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FreeCodeGram.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Profile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_26_032450_create_profiles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_26_032450_create_profiles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/FollowButton.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -146,6 +158,11 @@
       <path value="$PROJECT_DIR$/vendor/php-parallel-lint/php-console-highlighter" />
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/bcmath_compat" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/laravel/telescope" />
+      <path value="$PROJECT_DIR$/vendor/moontoast/math" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hzNvvk8WrLWZTp9D1OEXjsJlcP" />
@@ -161,14 +178,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/profiles" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/posts" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\OpenServer\domains\FreeCodeGram\resources\views\profiles" />
       <recent name="E:\OpenServer\domains\FreeCodeGram\resources\views\posts" />
+      <recent name="E:\OpenServer\domains\FreeCodeGram\resources\views\profiles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\OpenServer\domains\FreeCodeGram\resources\views\profiles" />
@@ -195,7 +212,7 @@
       <workItem from="1601010737405" duration="601000" />
       <workItem from="1601049364829" duration="5000" />
       <workItem from="1603609693366" duration="26000" />
-      <workItem from="1603628885681" duration="51580000" />
+      <workItem from="1603628885681" duration="69546000" />
     </task>
     <servers />
   </component>
@@ -241,9 +258,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="155" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603725991956" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603868820407">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604051608628">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603868820407" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604051608628" />
   </component>
 </project>
